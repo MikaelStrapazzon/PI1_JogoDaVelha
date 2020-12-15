@@ -12,27 +12,29 @@
 	<div id="caixaCorpo">
 		<header>
 			<h1>Jogo da Velha</h1>
-			<p><span>X </span>0 x 0<span> O</span></p>
+			<p><span>X </span><span id="placarX">0</span> x <span id="placarO">0</span><span> O</span></p>
+			<input type="hidden" id="jogador" value="x">
 		</header>
 		<main>
 			<div class="linha">
-				<div class="coluna" value="C1-1"><p></p></div>
-				<div class="coluna" value="C1-2"><p></p></div>
-				<div class="coluna" value="C1-3"><p></p></div>
+				<div class="coluna"><p></p></div>
+				<div class="coluna"><p></p></div>
+				<div class="coluna"><p></p></div>
 			</div>
 			<div class="linha">
-				<div class="coluna" value="C2-1"><p></p></div>
-				<div class="coluna" value="C2-2"><p></p></div>
-				<div class="coluna" value="C2-3"><p></p></div>
+				<div class="coluna"><p></p></div>
+				<div class="coluna"><p></p></div>
+				<div class="coluna"><p></p></div>
 			</div>
 			<div class="linha">
-				<div class="coluna" value="C3-1"><p></p></div>
-				<div class="coluna" value="C3-2"><p></p></div>
-				<div class="coluna" value="C3-3"><p></p></div>
+				<div class="coluna"><p></p></div>
+				<div class="coluna"><p></p></div>
+				<div class="coluna"><p></p></div>
 			</div>
 		</main>
 		<footer>
-			<p>É a vez do jogador: <span>X<span></p>
+			<p>É a vez do jogador: <span id="vezJogador">X<span></p>
+			<button id="reset" onclick="reset()">Resetar jogo</button>
 		</footer>
 	</div>
 	<script src="imports/js/index.js"></script>

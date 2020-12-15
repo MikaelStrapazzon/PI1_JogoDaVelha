@@ -34,7 +34,7 @@ header > p{
 	margin: 5px;
 }
 
-header > p > span{
+header > p > span:not(#placarX):not(#placarO){
 	font-size: 4rem;
 	font-weight: 800;
 	margin: 0 5px;
@@ -76,7 +76,7 @@ main{
 	cursor: pointer;
 }
 
-.coluna:hover{
+:not(.selecionadoX):not(.selecionadoO).coluna:hover{
 	background-color: #BBBBBB;
 }
 
@@ -87,4 +87,31 @@ footer{
 footer > p > span{
 	font-weight: 800;
 	font-size: 2.2rem;
+}
+
+#reset{
+	font: 400 1.5rem/1 "Nunito", sans-serif;
+	color: white;
+
+	background: black;
+
+	padding: 8px;
+	margin: 10px;
+
+	border: 0;
+	border-radius: 6px;
+
+	cursor: pointer;
+}
+
+.selecionadoX{
+	background: #f52121;
+}
+
+.selecionadoO{
+	background: #00a4ff;
+}
+
+.vencedor{
+	background: black;
 }
